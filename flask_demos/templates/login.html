@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>用户登陆</title>
+</head>
+<body>
+    <h1>用户登陆</h1>
+    <!-- 在表单里，如果没有写action，默认往本页面进行提交 -->
+    <form method="post">
+        <input type="text" name='user'>
+        <input type="password" name='pwd'>
+        <input type="submit" value='提交'> <span>{{error}}</span>
+    </form>
+</body>
+</html>

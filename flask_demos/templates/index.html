@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>用户信息展示</title>
+</head>
+<body>
+    <h1>用户列表</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>用户名</th>
+                <th>年龄</th>
+                <th>操作</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            {% for key,val in data_dict.items() %}
+            <tr>
+                <td>{{key}}</td>
+                <td>{{val.name}}</td>
+                <td>{{val['age']}}</td>
+                <td>
+                    <!-- 以get的方式将数据传递到view -->
+                    <a href="/edit?nid={{key}}">编辑</a>
+                    <!-- 以网址的一部分将数据传递到view -->
+                    <a href="/del/{{key}}">删除</a>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+
+
+    </table>
+</body>
+</html>
