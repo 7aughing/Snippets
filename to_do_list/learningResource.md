@@ -10,6 +10,10 @@
 
    课件+代码：https://github.com/duantiantian/Snippets/tree/master/flask_demos/flask%E4%BB%A3%E7%A0%81%2B%E8%AF%BE%E4%BB%B6
 
+3. 计算机基础
+
+   [【精校中英字幕】2015 CMU 15-213 CSAPP 深入理解计算机系统 课程视频](https://www.bilibili.com/video/av31289365/)
+
 
 
 # DeepLearing
