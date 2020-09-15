@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="10dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:id="@+id/relative_layout">
+
+    <androidx.camera.view.PreviewView
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:id="@+id/viewFinder">
+    </androidx.camera.view.PreviewView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="15dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_start_video_light"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Start Video"
+            android:textSize="16dp" />
+
+        <Button
+            android:id="@+id/btn_back_from_light"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:textSize="16dp"
+            android:text="Back" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/mySurfaceView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:id="@+id/linear_layout2">
+
+        <ImageView
+            android:id="@+id/myImageView2"
+            android:layout_width="900dp"
+            android:layout_height="900dp"
+            android:src="@drawable/my_square"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:id="@+id/background"
+        android:visibility="gone"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+
+
+</RelativeLayout>

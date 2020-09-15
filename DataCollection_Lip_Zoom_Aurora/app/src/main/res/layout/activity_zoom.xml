@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <androidx.camera.view.PreviewView
+        android:id="@+id/viewFinder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </androidx.camera.view.PreviewView>
+
+    <LinearLayout
+        android:layout_below="@+id/mySurfaceView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/myImageView"
+            android:layout_width="450dp"
+            android:layout_height="450dp"
+            android:src="@drawable/my_square"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/mySurfaceView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        tools:ignore="UnknownId">
+
+        <ImageView
+            android:id="@+id/myImageView"
+            android:layout_width="900dp"
+            android:layout_height="900dp"
+            android:src="@drawable/my_square"
+            tools:ignore="DuplicateIds" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="15dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnStartVideo"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:elevation="2dp"
+            android:scaleType="fitCenter"
+            android:text="@string/vid_button_name"
+            android:textSize="16dp" />
+
+        <Button
+            android:id="@+id/btn_back_from_zoom"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:elevation="2dp"
+            android:scaleType="fitCenter"
+            android:text="BACK"
+            android:textSize="16dp" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>
+
+
