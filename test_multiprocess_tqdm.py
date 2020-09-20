@@ -15,6 +15,6 @@ if __name__ == '__main__':
     img_paths = glob.glob("/home/ld-sgdev/tiantian_duan/workspace/lipreading_from_2D/data/mth_lmks/train/"+"*.npy")
 
     with multiprocessing.Pool(8) as pool:
-        r = list(tqdm.tqdm(pool.imap(show_name, range(len(img_paths))), total=len(img_paths)))
+        r = list(tqdm.tqdm(pool.imap(show_name, img_paths), total=len(img_paths)))
 
     print('done')
